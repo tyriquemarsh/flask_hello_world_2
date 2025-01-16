@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Start Year</th>
+                    <th>End Year</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for education in found_education %}
+                    <tr>
+                        <td>{{ education.Qualification }}</td>
+                        <td>{{ education.Institution }}</td>
+                        <td>{{ education.Start_Year }}</td>
+                        <td>{{ education.End_Year }}</td>
+                        <td>{{ education.Description }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</section>
+{% endblock content %}

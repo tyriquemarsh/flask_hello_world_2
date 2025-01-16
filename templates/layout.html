@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" 
+        href="{{url_for('static',filename='css/style.css')}}">
+    <title>CMT120 CW2</title>
+    <h1>My Digital Portfolio</h1>
+</head>
+
+<body>
+    <div>
+        <ul id="menubar">
+            <li id="menudiv"><a href="{{ url_for('hello_world') }}">Home</a></li>
+            <li id="menudiv"><a href="{{ url_for('load_skills') }}">Skills</a></li>
+            <li id="menudiv"><a href="{{ url_for('load_work') }}">Work Experience</a></li>
+            <li id="menudiv"><a href="{{ url_for('load_education') }}">Education</a></li>
+            <li id="menudiv"><a href="{{ url_for('load_contact') }}">Contact</a></li>
+        </ul>
+    </div>
+
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <div id="footer">
+        Digital Portfolio for the Course CMT210 - Fundamentals of Programming
+    </div>
+
+</body>
+
+</html>

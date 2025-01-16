@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+ <section id="work-experience">
+    <h1>Work Experience</h1>
+    {% for work in found_work %}
+        <div class="work-item">
+            <h3>{{ work.Company_Name }}</h3>
+            <p><strong>{{ work.Job_Title }}</strong></p>
+            <p><strong>Start Date:</strong> {{ work.Start_Date }}</p>
+            <p><strong>End Date:</strong> {{ work.End_Date }}</p>
+            <p><strong>Responsibilities:</strong></p>
+            <p>{{ work.Responsibilities }}</p>
+        </div>
+    {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

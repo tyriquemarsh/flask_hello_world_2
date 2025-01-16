@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div id="intro">
+    <h1>Hi, I'm Tyrique Marsh.</h1> 
+    <p>Welcome to my portfolio! I'm a computer science student aspiring to be a software devloper, with expertise in communication and digital marketing.</p>
+    <img id="profile" class="fade-in" src="{{url_for('static', filename='images/Me.jpg')}}" width="1100" height="600">
+    </div>  
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Growing up with video games, I have always been interested in technology and surrounded myself with it during my childhood. Through my experience in digital marketing, I was introduced to the technical side of websites and I learned about the programming languages used to build them. It was then that I knew I wanted to learn how to code so I could create my own software.</p>
+        <p>I also have a creative side - I enjoy cooking, baking, and reading, I've even created a few stories myself. Prior to my enrollment at Cardiff University, I studied English with Creative Writing in Coventry which helped me to hone my writer's voice. </p>
+        <p>This portfolio is a consolidation of my work experience, education and skills. My goal is to continue creating my own software and updating this portfolio with those projects.</p>
+        <p><a href ="{{ url_for('load_contact') }}">Get in touch with me!</a></p>
+    </section>
+    <script src="static/js/main.js"></script>
+{% endblock content %}

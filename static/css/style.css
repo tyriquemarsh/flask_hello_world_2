@@ -1,0 +1,101 @@
+#menubar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#footer{
+    font: 14px;
+    color: white;
+    background-color: #333;
+    margin: 0;
+    padding: 16px;
+}
+
+#menudiv {
+    float: left;
+}
+
+#menudiv a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#list_content{
+    font-size: larger;
+}
+
+.subBt {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+th{
+    padding: 14px 16px;
+    background-color: black;
+    color: white;
+}
+
+.message{
+    padding: 10px; 
+    font-size: 40px;
+}
+
+.listItemClick {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 250px;
+}
+
+
+.vertical-list {
+    width: 200px;
+}
+
+.vertical-list a {
+    background-color: #04AA6D;
+    text-align: left;
+    color: white;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.vertical-list a:hover {
+    background-color: #ccc;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+  }
+  
+  .fade-in-visible {
+    opacity: 1;
+  }
+
+#about {
+    position: relative;
+    opacity: 0; 
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+#about.fly-up {
+    opacity: 1;
+    transform: translateY(-25px); 
+}
+
